@@ -2,19 +2,19 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Sparkles } from "lucide-react"
 
 const values = [
-  { title: "Качество", description: "Высококлассные решения, соответствующие самым высоким стандартам" },
-  { title: "Доступность", description: "Профессиональные сайты по честным и прозрачным ценам" },
-  { title: "Прозрачность", description: "Четкая коммуникация без скрытых платежей" },
-  { title: "Клиентоориентированность", description: "Ваши цели и пожелания всегда в приоритете" },
-  { title: "Масштабируемость", description: "Сайты, которые растут вместе с вашим бизнесом" },
-  { title: "Гибкость", description: "Быстрая адаптация под меняющиеся потребности" },
+  { title: "Качество материалов", description: "Используем только сертифицированную профессиональную химию и расходники" },
+  { title: "Гарантия результата", description: "Даём письменную гарантию на все виды защитных покрытий" },
+  { title: "Опытные мастера", description: "Команда сертифицированных специалистов с 7+ годами практики" },
+  { title: "Индивидуальный подход", description: "Подбираем оптимальный комплекс услуг под каждый автомобиль" },
+  { title: "Современное оборудование", description: "Профессиональные полировальные машины и боксы с контролем климата" },
+  { title: "Прозрачные цены", description: "Честная стоимость без скрытых доплат, смета до начала работ" },
 ]
 
 const stats = [
-  { number: "50+", label: "Проектов" },
-  { number: "45+", label: "Довольных клиентов" },
-  { number: "30+", label: "Созданных логотипов" },
-  { number: "3+", label: "Года опыта" },
+  { number: "500+", label: "Обработанных авто" },
+  { number: "98%", label: "Довольных клиентов" },
+  { number: "7+", label: "Лет на рынке" },
+  { number: "5 лет", label: "Гарантия на керамику" },
 ]
 
 export function AboutSection() {
@@ -27,10 +27,10 @@ export function AboutSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
             <Sparkles className="h-4 w-4" />
-            О CodeCraft
+            О AutoDetailingPro
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Качество, которое{" "}
+            Уход, который{" "}
             <span className="text-primary relative">
               впечатляет
               <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none">
@@ -39,7 +39,7 @@ export function AboutSection() {
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Создание сайта не должно быть дорогим. Мы разрабатываем индивидуальные решения, которые идеально соответствуют пожеланиям каждого клиента.
+            Мы не просто моем автомобили — мы возвращаем им первоначальный блеск и защищаем на годы вперёд. Каждая деталь важна, каждый клиент особенный.
           </p>
         </div>
 

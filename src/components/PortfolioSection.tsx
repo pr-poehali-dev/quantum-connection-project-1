@@ -4,40 +4,36 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "Умный помощник по выборам",
-    category: "AI/ML и веб-разработка",
-    image: "/omgekeerdestemwijzer-banner.png",
+    title: "Керамическое покрытие BMW M5",
+    category: "Керамика + полировка",
+    image: "/smartwheels.jpg",
     description:
-      "AI-приложение для выборов. Пользователи задают вопросы о позициях партий и получают 100% фактические ответы из официальных программ с использованием RAG-технологии.",
-    url: "https://de-omgekeerde-stemwijzer.onrender.com/",
-    tags: ["Next.js", "AI/ML", "RAG", "TypeScript"],
+      "Полная двухступенчатая полировка кузова с устранением голограмм и лёгких царапин. Нанесение профессиональной нанокерамики с гарантией 3 года. Результат — глубокий глянец и надёжная защита.",
+    tags: ["Полировка", "Керамика", "BMW", "Детейлинг"],
   },
   {
-    title: "Автомойка Tahsin",
-    category: "Веб-дизайн и разработка",
-    image: "/autopoetsbedrijf-tahsin-project.png",
+    title: "PPF + детейлинг Porsche Cayenne",
+    category: "Защитная плёнка PPF",
+    image: "/autopoetsbedrijf-tahsin.jpg",
     description:
-      "Профессиональный сайт для автомойки с 20-летним опытом. Полная презентация услуг, автомойки и гаража с современным адаптивным дизайном.",
-    url: "https://www.autopoetsbedrijftahsin.nl/",
-    tags: ["React", "Next.js", "Tailwind CSS"],
+      "Оклейка капота, переднего бампера и зеркал прозрачной защитной плёнкой PPF. Дополнительно: химчистка салона из алькантары, обработка кожи, чернение резины.",
+    tags: ["PPF", "Химчистка", "Porsche", "Салон"],
   },
   {
-    title: "Кадровое агентство CAN",
-    category: "Веб-разработка",
-    image: "/can-uitzendbureau-project.png",
+    title: "Предпродажная подготовка Mercedes",
+    category: "Комплексная подготовка",
+    image: "/murat-sahin-portfolio.jpg",
     description:
-      "Кадровое агентство с 30-летним опытом в садоводческом секторе. Сайт с обзором услуг и прямыми контактами для работодателей и соискателей.",
-    url: "https://canbv.nl/",
-    tags: ["Next.js", "React", "Tailwind CSS"],
+      "Полный комплекс услуг для подготовки к продаже: одношаговая полировка, детейлинг кузова, химчистка салона, обработка стёкол гидрофобным составом. Автомобиль ушёл на 15% дороже рынка.",
+    tags: ["Полировка", "Детейлинг", "Mercedes", "Продажа"],
   },
   {
-    title: "Портфолио Murat Sahin",
-    category: "Портфолио-сайт",
-    image: "/murat-sahin-portfolio.png",
+    title: "Восстановление Tesla Model 3",
+    category: "Восстановительная полировка",
+    image: "/omgekeerde-stemwijzer.jpg",
     description:
-      "Профессиональное портфолио full-stack разработчика. Демонстрация проектов, навыков и опыта с современным минималистичным дизайном и темной темой.",
-    url: "https://murat-sahin-dev.vercel.app/",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", ".NET Core"],
+      "Трёхступенчатая коррекция лакокрасочного покрытия с глубокими царапинами. Устранение 90% дефектов кузова. Финальное покрытие жидким стеклом для долгосрочной защиты.",
+    tags: ["Коррекция", "Жидкое стекло", "Tesla", "Восстановление"],
   },
 ]
 
@@ -46,9 +42,9 @@ export function PortfolioSection() {
     <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наше портфолио</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наши работы</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Ознакомьтесь с подборкой наших последних проектов и узнайте, как мы помогаем бизнесу расти с помощью мощных цифровых решений.
+            Смотрите сами — каждый автомобиль получает индивидуальный подход и максимальный результат.
           </p>
         </div>
 
@@ -69,9 +65,9 @@ export function PortfolioSection() {
                     size="sm"
                     variant="secondary"
                     className="gap-2"
-                    onClick={() => window.open(project.url, "_blank")}
+                    onClick={() => {}}
                   >
-                    Открыть проект <ExternalLink className="h-4 w-4" />
+                    Смотреть детали <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
               </div>

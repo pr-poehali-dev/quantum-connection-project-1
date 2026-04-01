@@ -4,39 +4,40 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
-    name: "Базовый",
-    price: "99 900",
+    name: "Стандарт",
+    price: "3 900",
     features: [
-      "До 5 страниц",
-      "Адаптивный дизайн",
-      "Базовая SEO-оптимизация",
-      "Форма обратной связи",
-      "1 месяц поддержки",
+      "Бесконтактная мойка кузова",
+      "Чистка колёсных дисков",
+      "Химчистка салона (базовая)",
+      "Чернение резины",
+      "Обработка стёкол",
     ],
     highlighted: false,
   },
   {
-    name: "Про",
-    price: "249 900",
+    name: "Детейлинг",
+    price: "12 900",
     features: [
-      "До 15 страниц",
-      "Премиум-дизайн",
-      "Расширенная SEO-оптимизация",
-      "Интеграция CMS",
-      "Функционал e-commerce",
-      "3 месяца поддержки",
+      "Двухступенчатая полировка",
+      "Глубокая химчистка салона",
+      "Нанесение жидкого стекла",
+      "Обработка кожи / пластика",
+      "Чернение арок и резины",
+      "Устранение царапин и потёртостей",
     ],
     highlighted: true,
   },
   {
-    name: "Индивидуальный",
+    name: "Премиум",
     price: "По запросу",
     features: [
-      "Неограниченно страниц",
-      "Кастомный функционал",
-      "API-интеграции",
+      "Керамическое покрытие (2–5 лет)",
+      "Коррекция ЛКП 3 ступени",
+      "PPF на проблемные зоны",
+      "Полная химчистка салона",
       "Персональный менеджер",
-      "6 месяцев поддержки",
+      "Гарантия результата",
     ],
     highlighted: false,
   },
@@ -60,10 +61,10 @@ export function PricingSection() {
             Прозрачные цены
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Выберите <span className="text-primary">идеальный тариф</span> для вашего проекта
+            Выберите <span className="text-primary">идеальный пакет</span> для вашего авто
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            От стартапов до крупного бизнеса — у нас есть подходящее решение
+            От базового ухода до полного детейлинга с защитой на годы вперёд
           </p>
         </div>
 
@@ -112,7 +113,7 @@ export function PricingSection() {
                   variant={tier.highlighted ? "default" : "outline"}
                   className={`w-full ${tier.highlighted ? "shadow-lg shadow-primary/20" : ""}`}
                 >
-                  {tier.price === "По запросу" ? "Связаться с нами" : "Выбрать тариф"}
+                  {tier.price === "По запросу" ? "Получить расчёт" : "Записаться"}
                 </QuoteFormDialog>
               </CardContent>
             </Card>
@@ -121,8 +122,8 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            Все тарифы включают <span className="text-primary font-semibold">бесплатную настройку хостинга</span> и{" "}
-            <span className="text-primary font-semibold">SSL-сертификат</span>
+            Все пакеты включают <span className="text-primary font-semibold">бесплатный осмотр автомобиля</span> и{" "}
+            <span className="text-primary font-semibold">детальный отчёт о состоянии ЛКП</span>
           </p>
         </div>
       </div>
